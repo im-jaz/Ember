@@ -6,7 +6,7 @@
       "category": "small-plates",
       "description": "Whipped ricotta, pistachio, and warm honey from the hearth.",
       "price": 15,
-      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85",
+      "image": "./images/menu1.jpg",
       "available": true,
       "featured": true,
       "sortOrder": 1
@@ -17,7 +17,7 @@
       "category": "mains",
       "description": "Whole Columbia River trout, charred lemon, and garden herbs.",
       "price": 32,
-      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=85",
+      "image": "./images/menu2.jpeg",
       "available": true,
       "featured": true,
       "sortOrder": 2
@@ -28,7 +28,7 @@
       "category": "mains",
       "description": "Thirty-day dry-aged beef, embered onions, and green peppercorn jus.",
       "price": 48,
-      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85",
+      "image": "./images/menu3.jpeg",
       "available": true,
       "featured": true,
       "sortOrder": 3
@@ -39,7 +39,7 @@
       "category": "small-plates",
       "description": "Creamy burrata, peak-season tomatoes, basil, and grilled sourdough.",
       "price": 18,
-      "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=1000&q=85",
+      "image": "./images/menu4.jpeg",
       "available": true,
       "featured": false,
       "sortOrder": 4
@@ -72,7 +72,7 @@
       "category": "drinks",
       "description": "Fresh lemon, garden herbs, and a touch of wildflower honey.",
       "price": 6,
-      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=85",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1000&q=85",
       "available": true,
       "featured": false,
       "sortOrder": 7
@@ -106,7 +106,7 @@
       "subtotal": 47,
       "deliveryFee": 7,
       "total": 54,
-      "status": "pending",
+      "status": "delivered",
       "createdAt": "2026-11-03T11:52:38.116Z"
     }
   ]

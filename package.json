@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "NODE_ENV=development node server.js",
-        "build": "node scripts/build.js",
+        "build": "node script/build.js",
         "start": "NODE_ENV=production node server.js",
         "format": "oxfmt",
         "test": "vitest run",

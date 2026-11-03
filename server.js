@@ -17,7 +17,7 @@ try {
 const router = jsonServer.router(dataFile);
 const db = router.db;
 const port = Number(process.env.PORT || 3000);
-const staticRoot = path.join(__dirname, process.env.NODE_ENV === 'production' ? 'dist' : 'site');
+const staticRoot = path.join(__dirname, process.env.NODE_ENV === 'production' ? 'dist' : '.');
 const staffTokens = new Map();
 const allowedStatuses = new Set(['pending', 'preparing', 'ready', 'out-for-delivery', 'delivered', 'cancelled']);
 
@@ -145,11 +145,12 @@ app.delete('/api/employee-orders/:id', authenticated, (request, response) => {
 const pages = new Map([
   ['/', 'index.html'], ['/menu', 'menu.html'], ['/cart', 'cart.html'],
   ['/checkout', 'checkout.html'], ['/confirmation', 'confirmation.html'],
-  ['/track-order', 'track-order.html'], ['/dashboard', 'dashboard.html'],
+  ['/track-order', 'tracking.html'], ['/dashboard', 'dashboard.html'],
 ]);
 app.get('*', (request, response, next) => {
   if (request.path.startsWith('/api/')) return next();
-  const file = pages.get(request.path);
+  const route = request.path.replace(/\/+$/, '') || '/';
+  const file = pages.get(route);
   if (file) return response.sendFile(path.join(staticRoot, file));
   return next();
 });
