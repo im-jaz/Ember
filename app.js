@@ -51,7 +51,11 @@ async function initMenu() {
       cart = addCartItem(cart, item); syncCart(); button.innerHTML = 'Added to your order <span aria-hidden="true">✓</span>';
       window.setTimeout(() => { if (button.isConnected) button.innerHTML = 'Add to order <span aria-hidden="true">＋</span>'; }, 1400);
     });
-  } catch (error) { setMessage(status, apiError(error), true); }
+  } catch (error) {
+    setMessage(status, apiError(error), true);
+    const featured = document.querySelector('[data-featured-menu]');
+    if (featured) featured.innerHTML = '<p class="loading-note">The menu could not be loaded. Please try again shortly.</p>';
+  }
 }
 
 function renderCart() {

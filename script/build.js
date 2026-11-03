@@ -10,4 +10,5 @@ const publicFiles = [
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await Promise.all(publicFiles.map((file) => cp(new URL(`../${file}`, import.meta.url), new URL(file, output))));
+await cp(new URL('../images/', import.meta.url), new URL('images/', output), { recursive: true });
 console.log('Static HTML, CSS, and JavaScript written to dist/.');
