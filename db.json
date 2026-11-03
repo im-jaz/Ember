@@ -1,0 +1,113 @@
+{
+  "menu-items": [
+    {
+      "id": "ember-carrots",
+      "name": "Ember-roasted carrots",
+      "category": "small-plates",
+      "description": "Whipped ricotta, pistachio, and warm honey from the hearth.",
+      "price": 15,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "wood-fired-trout",
+      "name": "Wood-fired trout",
+      "category": "mains",
+      "description": "Whole Columbia River trout, charred lemon, and garden herbs.",
+      "price": 32,
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "ribeye-steak",
+      "name": "Hearth-cut ribeye",
+      "category": "mains",
+      "description": "Thirty-day dry-aged beef, embered onions, and green peppercorn jus.",
+      "price": 48,
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "burrata-tomatoes",
+      "name": "Burrata & late tomatoes",
+      "category": "small-plates",
+      "description": "Creamy burrata, peak-season tomatoes, basil, and grilled sourdough.",
+      "price": 18,
+      "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": false,
+      "sortOrder": 4
+    },
+    {
+      "id": "charred-broccolini",
+      "name": "Charred broccolini",
+      "category": "sides",
+      "description": "Wood-fired greens with chile, preserved lemon, and sesame.",
+      "price": 12,
+      "image": "https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": false,
+      "sortOrder": 5
+    },
+    {
+      "id": "olive-oil-cake",
+      "name": "Olive oil cake",
+      "category": "desserts",
+      "description": "Citrus-soaked cake, seasonal fruit, and cultured cream.",
+      "price": 11,
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": false,
+      "sortOrder": 6
+    },
+    {
+      "id": "house-lemonade",
+      "name": "House lemonade",
+      "category": "drinks",
+      "description": "Fresh lemon, garden herbs, and a touch of wildflower honey.",
+      "price": 6,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=85",
+      "available": true,
+      "featured": false,
+      "sortOrder": 7
+    }
+  ],
+  "orders": [
+    {
+      "id": "2860ec8e-4259-4111-b443-ce1e04291a2f",
+      "orderNumber": "EMB-MW0MOWDG-271",
+      "customerName": "kush",
+      "phone": "095858666",
+      "fulfillment": "delivery",
+      "address": "huyty 678",
+      "notes": "gghtt",
+      "items": [
+        {
+          "menuItem": "ember-carrots",
+          "id": "ember-carrots",
+          "name": "Ember-roasted carrots",
+          "price": 15,
+          "quantity": 1
+        },
+        {
+          "menuItem": "wood-fired-trout",
+          "id": "wood-fired-trout",
+          "name": "Wood-fired trout",
+          "price": 32,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 47,
+      "deliveryFee": 7,
+      "total": 54,
+      "status": "pending",
+      "createdAt": "2026-11-03T11:52:38.116Z"
+    }
+  ]
+}
