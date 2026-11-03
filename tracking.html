@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Track Your Order | Ember</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Gilda+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="/assets/js/app.js"></script>
+</head>
+
+<body data-page="tracking"><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="page-shell header-inner"><a class="brand" href="/" aria-label="Ember home">EMBER</a>
+            <nav class="primary-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/menu">Menu</a><a
+                    href="/track-order" aria-current="page">Track order</a><a href="/dashboard">Staff</a></nav><a
+                class="cart-link" href="/cart"><span class="cart-word">Cart</span><span class="cart-count"
+                    data-cart-count>0</span></a>
+        </div>
+    </header>
+    <main id="main" class="page-shell page-content tracking-page">
+        <p class="eyebrow">Order tracking</p>
+        <h1 class="editorial-title">Follow the <em>flame.</em></h1>
+        <p class="page-intro">Enter your order number and the phone number used at checkout.</p>
+        <form class="tracking-form" data-tracking-form><label class="visually-hidden" for="tracking-number">Order
+                number</label><input id="tracking-number" name="orderNumber" required placeholder="Order number"><label
+                class="visually-hidden" for="tracking-phone">Phone number</label><input id="tracking-phone" name="phone"
+                required placeholder="Phone number"><button class="button button-dark" type="submit">Track
+                order</button></form>
+        <p class="status-message" data-tracking-message role="status" aria-live="polite"></p>
+        <div data-tracking-result></div>
+    </main>
+    <footer class="site-footer">
+        <div class="page-shell footer-grid">
+            <div><a class="footer-brand" href="/">EMBER</a>
+                <p>Seasonal cooking, warm hospitality, and a place at the table.</p>
+            </div>
+            <div>
+                <h2>Find us</h2>
+                <p>428 Alder Street<br>Portland, Oregon 97205</p>
+            </div>
+            <div>
+                <h2>Hours</h2>
+                <p>Tuesday–Thursday · 5–10<br>Friday–Saturday · 5–11</p>
+            </div>
+            <div>
+                <h2>Explore</h2><a href="/menu">Order online</a><a href="/track-order">Track your order</a><a
+                    href="/dashboard">Staff dashboard</a>
+            </div>
+        </div>
+        <div class="page-shell footer-bottom"><span>© 2026 Ember Restaurant</span><span>Food with a sense of
+                place</span></div>
+    </footer>
+</body>
+
+</html>
