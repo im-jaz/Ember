@@ -5,6 +5,7 @@ services:
     plan: starter
     buildCommand: npm ci && npm run build
     startCommand: npm start
+    healthCheckPath: /api/menu-items
     disk:
       name: ember-data
       mountPath: /var/data

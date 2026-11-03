@@ -5,7 +5,7 @@ describe('static build inputs and JSON Server seed', () => {
   it('includes the static pages and external module scripts', async () => {
     const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
     expect(html).toContain('<main id="main">');
-    expect(html).toContain('type="module" src="/app.js"');
+    expect(html).toContain('type="module" src="./app.js"');
     expect(html).not.toMatch(/<script>(?!\s*<\/script>)/i);
   });
 
