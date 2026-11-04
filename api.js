@@ -6,9 +6,19 @@ async function request(path, init = {}) {
   if (init.body) headers['Content-Type'] = 'application/json';
   const token = localStorage.getItem(TOKEN_KEY);
   if (token) headers.Authorization = `Bearer ${token}`;
-  const response = await fetch(`${API_BASE}${path}`, { ...init, headers });
+  let response;
+  try {
+    response = await fetch(`${API_BASE}${path}`, { ...init, headers });
+  } catch {
+    throw new Error('The ordering API is not reachable. Open this site through the running Node server, not a static preview.');
+  }
   const body = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(body.message || body.error || 'Something went wrong. Please try again.');
+  if (!response.ok) {
+    const message = body.message || body.error;
+    if (message) throw new Error(message);
+    if (response.status === 404) throw new Error('The ordering API was not found. This static host cannot process orders; use the deployed Node app.');
+    throw new Error(`The ordering API returned an error (${response.status}). Please try again.`);
+  }
   return body;
 }
 

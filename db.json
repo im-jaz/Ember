@@ -108,6 +108,29 @@
       "total": 54,
       "status": "delivered",
       "createdAt": "2026-11-03T11:52:38.116Z"
+    },
+    {
+      "id": "1dcd4c49-91c6-417b-9965-0d3c7fa8cb4d",
+      "orderNumber": "EMB-MW1EC5VH-999",
+      "customerName": "julik",
+      "phone": "078906547",
+      "fulfillment": "delivery",
+      "address": "huyt 678",
+      "notes": "",
+      "items": [
+        {
+          "menuItem": "ember-carrots",
+          "id": "ember-carrots",
+          "name": "Ember-roasted carrots",
+          "price": 15,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 15,
+      "deliveryFee": 7,
+      "total": 22,
+      "status": "pending",
+      "createdAt": "2026-11-04T00:46:33.150Z"
     }
   ]
 }
