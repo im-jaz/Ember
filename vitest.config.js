@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitest/config';
 export default defineConfig({
     test: {
+        environment: 'jsdom',
         coverage: {
             provider: 'v8',
-            include: ['site/assets/js/cart.js', 'site/assets/js/format.js', 'site/assets/js/validation.js'],
+            include: ['./app.js', './cart.js', './format.js', './validation.js', './api.js'],
             thresholds: {
                 branches: 50,
                 functions: 50,

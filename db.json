@@ -131,6 +131,29 @@
       "total": 22,
       "status": "pending",
       "createdAt": "2026-11-04T00:46:33.150Z"
+    },
+    {
+      "id": "316c99fa-dab8-46c1-8571-ed5b060d6d19",
+      "orderNumber": "EMB-MW1F6JNK-483",
+      "customerName": "huytgf",
+      "phone": "078996533",
+      "fulfillment": "delivery",
+      "address": "htyu 879",
+      "notes": "",
+      "items": [
+        {
+          "menuItem": "wood-fired-trout",
+          "id": "wood-fired-trout",
+          "name": "Wood-fired trout",
+          "price": 32,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 32,
+      "deliveryFee": 7,
+      "total": 39,
+      "status": "pending",
+      "createdAt": "2026-11-04T01:10:10.688Z"
     }
   ]
 }

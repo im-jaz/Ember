@@ -8,10 +8,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = jsonServer.create();
 const seedFile = path.join(__dirname, 'db.json');
 const dataFile = process.env.DB_FILE || seedFile;
+await mkdir(path.dirname(dataFile), { recursive: true });
 try {
   await access(dataFile);
 } catch {
-  await mkdir(path.dirname(dataFile), { recursive: true });
   await copyFile(seedFile, dataFile);
 }
 const router = jsonServer.router(dataFile);

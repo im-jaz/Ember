@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { addCartItem, cartCount, cartSubtotal, readCart, saveCart, updateCartItem, clearCart } from './cart.js';
-import { escapeHTML, label, money } from './format.js';
-import { validateCheckout } from './validation.js';
+import { addCartItem, cartCount, cartSubtotal, readCart, saveCart, updateCartItem, clearCart } from '../cart.js';
+import { escapeHTML, label, money } from '../format.js';
+import { validateCheckout } from '../validation.js';
 
 const sample = { id: 'dish-1', name: 'Hearth trout', category: 'mains', description: 'Fire cooked', price: 24 };
 const storageMock = (initial = null) => {
