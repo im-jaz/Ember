@@ -17,7 +17,7 @@
       "category": "mains",
       "description": "Whole Columbia River trout, charred lemon, and garden herbs.",
       "price": 32,
-      "image": "./images/menu2.jpeg",
+      "image": "./images/menu2.jpg",
       "available": true,
       "featured": true,
       "sortOrder": 2
@@ -57,11 +57,11 @@
     },
     {
       "id": "olive-oil-cake",
-      "name": "Olive oil cake",
+      "name": "Eclairs",
       "category": "desserts",
-      "description": "Citrus-soaked cake, seasonal fruit, and cultured cream.",
+      "description": "cream-filled choclate eclairs with dark chcocalte and coconut.",
       "price": 11,
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85",
+      "image": "./images/menu5.jpg",
       "available": true,
       "featured": false,
       "sortOrder": 6
