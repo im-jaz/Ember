@@ -3,7 +3,7 @@ import { cp, mkdir, rm } from 'node:fs/promises';
 const output = new URL('../dist/', import.meta.url);
 const publicFiles = [
 	'index.html', 'menu.html', 'cart.html', 'checkout.html', 'confirmation.html',
-	'dashboard.html', 'tracking.html', 'styles.css', 'app.js', 'api.js', 'cart.js',
+	'dashboard.html', 'tracking.html', 'styles.css', 'app.js', 'api.js', 'menu-items.json', 'cart.js',
 	'format.js', 'validation.js',
 ];
 

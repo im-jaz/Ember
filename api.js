@@ -12,7 +12,15 @@ async function request(path, init = {}) {
   return body;
 }
 
-export const getMenu = () => request('/menu-items');
+export const getMenu = async () => {
+  try {
+    return await request('/menu-items');
+  } catch (error) {
+    const response = await fetch(new URL('./menu-items.json', import.meta.url));
+    if (!response.ok) throw error;
+    return response.json();
+  }
+};
 export const createOrder = (data) => request('/orders', { method: 'POST', body: JSON.stringify(data) });
 export const trackOrder = (orderNumber, phone) => request(`/order-tracking?orderNumber=${encodeURIComponent(orderNumber)}&phone=${encodeURIComponent(phone)}`);
 export const staffLogin = async (username, password) => {
